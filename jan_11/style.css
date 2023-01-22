@@ -1,0 +1,290 @@
+body{
+    background-image: url("https://url.gdsc.app/static/media/background.f290abe3986e129f4509.svg");
+}
+/* header */
+header{
+    display: flex;
+    background-color: rgba(255,255,255,0.5);
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+}
+.logo{
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 186px;
+    height: 50px;
+    margin-right: 70%;
+    line-height: 24px;
+}
+/* setting the position of the content to be in the center */
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+/* properties of the button */
+/* .login{
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    background: rgb(197,227,252);
+    box-shadow: -3px -3px 7px #fffdfdcc,3px 3px 5px rgba(94, 104, 121, 0.5);
+    text-align:center;
+    font-size:22px;
+    line-height:50px;
+    cursor:pointer;
+    margin-top: 15px;
+} */
+/* properties of click */
+#click{
+    display: none;
+}
+.login:hover{
+    color: #0a5878;
+}
+/* properties of the content written */
+.content{
+    visibility: hidden;
+    width: 330px;
+    height: auto;
+    background: rgb(197,227,252);
+    box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.5),3px 3px 5px rgba(94, 104, 121, 0.5);
+    padding-top: 30px;
+    padding: 35px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+/* properties of the popup message */
+#temp{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 25px;
+    background: rgb(197,227,252);
+    padding: 3px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#click:checked~.content{
+    opacity: 1;
+    visibility: visible;
+}
+/* properties of the LOGIN text */
+.text{
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+}
+/* properties of label */
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.lb1{
+    border-radius: 2px;
+    /* margin-left: 70%; */
+    margin-right: 30px;
+
+    display: inline-block;
+    width: 10%;
+    height: 50px;
+    background: rgb(197,227,252);
+    box-shadow: -3px -3px 7px #fffdfdcc,3px 3px 5px rgba(94, 104, 121, 0.5);
+    text-align:center;
+    font-size:22px;
+    line-height:50px;
+    cursor:pointer;
+    margin-top: 15px;
+}
+/* properties of input obtained in the form */
+input{
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: rgb(233, 241, 247);
+    border-radius: 3px;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    position: relative;
+    left: 0;
+    top: -17px;
+}
+/* properties of place holder */
+::placeholder{
+    color: black;
+    padding-left: 10px;
+}
+/* properties of login button */
+header button{
+    width: 100%;
+    margin-top: 35px;
+    padding: 12px;
+    background: rgb(197,227,252);
+    box-shadow: -3px -3px 7px  rgba(94, 104, 121, 0.5),3px 3px 5px rgba(94, 104, 121, 0.342);
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+/* about section*/
+.about-section{
+    padding: 50px;
+    text-align: center;
+}
+
+/* hobby list */
+.hobby{
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    padding: 15px;
+}
+.list{
+    width: 100%;
+    display: flex;
+}
+.column{
+    float: left;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    overflow: hidden;
+}
+.card{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+
+    position: relative;
+    overflow: hidden;
+}
+.card img{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+.card:hover .description{
+    transform: translateY(0);
+}
+.description{
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+.container{
+    padding: 0 16px;
+}
+.container h2{
+    text-align: center;
+}
+.container::after, .row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    background-color: rgba(255,255,255,0.5);
+    /* width: 100%; */
+}
+
+/* sign up for newsletter */
+.send-mail{
+    display: flex;
+    cursor: pointer;
+    border-bottom: 10px;
+    margin-left: 30px;
+    /* width: 70%; */
+    width: auto;
+}
+.send{
+    display: flex;
+}
+.mail{
+    margin-right: 50px;
+}
+.mail h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    left: 0;
+    top: -11px;
+}
+/* .email{
+    margin-bottom: 20px;
+} */
+.input-and-button{
+    display: flex;
+    justify-content: space-between;
+}
+footer input{
+    position: static;
+}
+footer button{
+    /* margin-top: 59px; */
+    height: 45px;
+    padding: 15px;
+    background: rgb(197,227,252);
+    box-shadow: -3px -3px 7px  rgba(94, 104, 121, 0.5),3px 3px 5px rgba(94, 104, 121, 0.342);
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+/* connect on social medias */
+.link{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.connect{
+    margin-top: -20px;
+    /* margin-right: 200px; */
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.connect h2{
+    font-size: 30px;
+}
+
+/* .button{
+    text-align: center;
+}
+p.uppercase{
+    text-transform: uppercase;
+    text-decoration: underline;
+} */
+
+/* @media only for screen and (min-width: 768px){
+    [class="column"]{
+        width: 100%;
+    }
+} */
